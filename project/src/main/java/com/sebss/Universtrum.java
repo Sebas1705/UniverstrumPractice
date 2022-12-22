@@ -67,7 +67,7 @@ public class Universtrum {
      * más antigua de todas las que tienen la misma prioridad.
      */
     public void start() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.status=Status.RUNNING;
     };
 
     /**
@@ -84,11 +84,12 @@ public class Universtrum {
      */
     public void shutdown() {
         // Marcar la instancia como SHUTTING_DOWN
+        this.status=Status.SHUTTING_DOWN;
         // ¿Hay que actualizar el sistema de hilos para que notificar que estamos en proceso de apagado?
 
         // ¿Cómo comprobar de forma asíncrona que se acaban todas las tareas para despúes, pasar el estado a STOPPED?
 
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.status=Status.STOPPED;
     }
 
 }
