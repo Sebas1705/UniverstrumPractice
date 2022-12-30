@@ -20,9 +20,9 @@ public class ComplexTask {
     }
 
     public int solve() {
-        //TODO: Para simular la resolución de la tarea, el hilo que ejecute este método deberá devolver
-        //      el valor de expectedSolution después de que pasaen costInMillis milisegundos.
-        // Se puede utilizar la función sleep
+        //Para simular la resolución de la tarea, el hilo que ejecute este método deberá devolver
+        //el valor de expectedSolution después de que pasaen costInMillis milisegundos.
+        //Se puede utilizar la función sleep
         sleep(computationCostInMillis);
         return expectedSolution;
     }
@@ -30,9 +30,7 @@ public class ComplexTask {
     private static void sleep(long millis) {
         try {
             Thread.sleep(millis);
-        } catch (InterruptedException e) {
-
-        }
+        } catch (InterruptedException e) {}
     }
 
     @Override
